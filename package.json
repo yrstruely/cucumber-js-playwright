@@ -1,0 +1,23 @@
+{
+  "name": "cucumber-js",
+  "version": "1.0.0",
+  "description": "A simple sample project 'shouty.js' showing how to use cucumber-js combined with mocha and chai for development with Behaviour-Driven and Test-Driven Development.",
+  "main": "src/shouty.js",
+  "type": "module",
+  "scripts": {
+    "test": "mocha test/tdd/unit/* & cucumber-js -f @cucumber/pretty-formatter -f html:test/results/cucumber.html -f json:test/results/cucumber.json -f rerun:test/results/@rerun.txt"
+  },
+  "keywords": [
+    "cucumber"
+  ],
+  "author": "Kerry Harris",
+  "homepage": "https://github.com/yrstruely/cucumber-js",
+  "license": "ISC",
+  "devDependencies": {
+    "@cucumber/cucumber": "latest",
+    "@cucumber/pretty-formatter": "latest",
+    "chai": "latest",
+    "hamjest": "latest",
+    "mocha": "latest"
+  }
+}

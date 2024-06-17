@@ -1,0 +1,36 @@
+{
+    "cucumberautocomplete.steps": [
+        "test/bdd/features/step_definitions/*.js",
+        "node_modules/qa-lib/src/step_definitions/*.js"
+    ],
+    "cucumberautocomplete.syncfeatures": "test/bdd/features/*feature",
+    "cucumberautocomplete.strictGherkinCompletion": false,
+    "cucumberautocomplete.strictGherkinValidation": true,
+    "cucumberautocomplete.smartSnippets": true,
+    "cucumberautocomplete.stepsInvariants": true,
+    "cucumberautocomplete.customParameters": [
+        {
+            "parameter":"{ab}",
+            "value":"(a|b)"
+        },
+    ],
+    "cucumberautocomplete.pages": {
+        "users": "test/bdd/features/page_objects/users.storage.js",
+        "pathes": "test/bdd/features/page_objects/pathes.storage.js",
+        "main": "test/bdd/features/support/page_objects/main.page.js"
+    },
+    "cucumberautocomplete.skipDocStringsFormat": true,
+    "cucumberautocomplete.formatConfOverride": {
+        "And": 3,
+        "But": "relative",
+    },
+    "cucumberautocomplete.onTypeFormat": true,
+    "editor.quickSuggestions": {
+        "comments": false,
+        "strings": true,
+        "other": true
+    },
+    "cucumberautocomplete.gherkinDefinitionPart": "(Given|When|Then)\\(",
+    "cucumberautocomplete.stepRegExSymbol": "'",
+    "cucumberautocomplete.pureTextSteps": true
+}
