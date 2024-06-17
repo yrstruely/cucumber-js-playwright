@@ -1,15 +1,15 @@
-# cucumber.js
+# cucumber-js-playwright
 
-cucumber.js is a simple sample project demonstrating how to use cucumber-js combined with mocha and chai for Behaviour-Driven Development (BDD) and Test-Driven Development (TDD). This project aims to show how you can utilize these tools to write clear, understandable tests and maintain high code quality.
+cucumber-js-playwright is a simple sample project demonstrating how to use cucumber-js combined with playwright for Behaviour-Driven Development (BDD) and Test-Driven Development (TDD). This project aims to show how you can utilize these tools to write clear, understandable tests and maintain high code quality.
 
 ## Table of Contents
 
-- [cucumber.js](#cucumberjs)
+- [cucumber-js-playwright](#cucumberjs)
   - [Table of Contents](#table-of-contents)
   - [Installation](#installation)
   - [Usage](#usage)
   - [Features](#features)
-    - [BDD with Cucumber.js](#bdd-with-cucumberjs)
+    - [BDD with cucumber-js](#bdd-with-cucumberjs)
     - [TDD with Mocha and Chai](#tdd-with-mocha-and-chai)
   - [Running Tests](#running-tests)
   - [Project Structure](#project-structure)
@@ -18,11 +18,11 @@ cucumber.js is a simple sample project demonstrating how to use cucumber-js comb
 
 ## Installation
 
-To get started with cucumber.js, clone the repository and install the necessary dependencies:
+To get started with cucumber-js, clone the repository and install the necessary dependencies:
 
 ```bash
-git clone git@github.com:yrstruely/cucumber-js.git
-cd cucumber.js
+git clone git@github.com:yrstruely/cucumber-js-playwright.git
+cd cucumber-js-playwright
 npm install
 ```
 
@@ -38,9 +38,9 @@ npm test
 
 ## Features
 
-### BDD with Cucumber.js
+### BDD with Cucumber-js
 
-The cucumber.js sample project uses cucumber-js to define and execute feature files which describe the behavior of the system in a human-readable way.
+The cucumber-js-playwright sample project uses cucumber-js to define and execute feature files which describe the behavior of the system in a human-readable way.
 
 Here is an example feature file demonstrating various BDD techniques:
 
@@ -100,7 +100,7 @@ Feature: Hear Shout
 
 ### TDD with Mocha and Chai
 
-The cucumber.js sample project employs mocha and chai to write unit tests that ensure individual components work correctly.
+The cucumber-js-playwright sample project employs mocha and chai to write unit tests that ensure individual components work correctly.
 
 Here is an example of the mocha tests demonstrating various TDD techniques:
 
@@ -145,7 +145,7 @@ This will run both the cucumber feature tests and the mocha unit tests.
 ## Project Structure
 
 ```
-cucumber.js/
+cucumber-js-playwright/
 ├── src/
 │   └── shouty.js
 ├── test/bdd/
