@@ -10,16 +10,24 @@
         "name": "Listener hears a message",
         "steps": [
           {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 379950249
+            }
+          },
+          {
             "arguments": [],
             "keyword": "Given ",
             "line": 9,
             "name": "a person named Lucy",
             "match": {
-              "location": "file:\\C:\\Users\\Kerry\\Programming\\github\\javascript\\cucumber.js\\test\\bdd\\features\\step_definitions\\steps.js:12"
+              "location": "file:/Users/kerryharris/Progamming/rush/cucumber-js-playwright/test/bdd/features/step_definitions/steps.js:12"
             },
             "result": {
               "status": "passed",
-              "duration": 982699
+              "duration": 219667
             }
           },
           {
@@ -28,11 +36,11 @@
             "line": 10,
             "name": "a person named Sean",
             "match": {
-              "location": "file:\\C:\\Users\\Kerry\\Programming\\github\\javascript\\cucumber.js\\test\\bdd\\features\\step_definitions\\steps.js:12"
+              "location": "file:/Users/kerryharris/Progamming/rush/cucumber-js-playwright/test/bdd/features/step_definitions/steps.js:12"
             },
             "result": {
               "status": "passed",
-              "duration": 109200
+              "duration": 37582
             }
           },
           {
@@ -41,11 +49,11 @@
             "line": 11,
             "name": "Sean shouts \"Free bagels at Sean's\"",
             "match": {
-              "location": "file:\\C:\\Users\\Kerry\\Programming\\github\\javascript\\cucumber.js\\test\\bdd\\features\\step_definitions\\shout_steps.js:4"
+              "location": "file:/Users/kerryharris/Progamming/rush/cucumber-js-playwright/test/bdd/features/step_definitions/shout_steps.js:4"
             },
             "result": {
               "status": "passed",
-              "duration": 240999
+              "duration": 112082
             }
           },
           {
@@ -54,11 +62,19 @@
             "line": 12,
             "name": "Lucy hears Sean's message",
             "match": {
-              "location": "file:\\C:\\Users\\Kerry\\Programming\\github\\javascript\\cucumber.js\\test\\bdd\\features\\step_definitions\\steps.js:24"
+              "location": "file:/Users/kerryharris/Progamming/rush/cucumber-js-playwright/test/bdd/features/step_definitions/steps.js:24"
             },
             "result": {
               "status": "passed",
-              "duration": 884500
+              "duration": 587249
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 42518542
             }
           }
         ],
@@ -73,16 +89,24 @@
         "name": "Only listener's in range can hear",
         "steps": [
           {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 103818667
+            }
+          },
+          {
             "arguments": [],
             "keyword": "Given ",
             "line": 18,
             "name": "the range is 100 meters",
             "match": {
-              "location": "file:\\C:\\Users\\Kerry\\Programming\\github\\javascript\\cucumber.js\\test\\bdd\\features\\step_definitions\\steps.js:8"
+              "location": "file:/Users/kerryharris/Progamming/rush/cucumber-js-playwright/test/bdd/features/step_definitions/steps.js:8"
             },
             "result": {
               "status": "passed",
-              "duration": 105300
+              "duration": 131792
             }
           },
           {
@@ -110,11 +134,11 @@
             "line": 19,
             "name": "people are located at:",
             "match": {
-              "location": "file:\\C:\\Users\\Kerry\\Programming\\github\\javascript\\cucumber.js\\test\\bdd\\features\\step_definitions\\steps.js:17"
+              "location": "file:/Users/kerryharris/Progamming/rush/cucumber-js-playwright/test/bdd/features/step_definitions/steps.js:17"
             },
             "result": {
               "status": "passed",
-              "duration": 347999
+              "duration": 177042
             }
           },
           {
@@ -123,11 +147,11 @@
             "line": 22,
             "name": "Sean shouts \"Free coffee at Sean's\"",
             "match": {
-              "location": "file:\\C:\\Users\\Kerry\\Programming\\github\\javascript\\cucumber.js\\test\\bdd\\features\\step_definitions\\shout_steps.js:4"
+              "location": "file:/Users/kerryharris/Progamming/rush/cucumber-js-playwright/test/bdd/features/step_definitions/shout_steps.js:4"
             },
             "result": {
               "status": "passed",
-              "duration": 163699
+              "duration": 124457
             }
           },
           {
@@ -136,11 +160,19 @@
             "line": 23,
             "name": "Lucy only hears Sean's message when she is in range",
             "match": {
-              "location": "file:\\C:\\Users\\Kerry\\Programming\\github\\javascript\\cucumber.js\\test\\bdd\\features\\step_definitions\\steps.js:37"
+              "location": "file:/Users/kerryharris/Progamming/rush/cucumber-js-playwright/test/bdd/features/step_definitions/steps.js:37"
             },
             "result": {
               "status": "passed",
-              "duration": 250599
+              "duration": 194624
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 45195833
             }
           }
         ],
@@ -155,16 +187,24 @@
         "name": "Only listener's in range can hear",
         "steps": [
           {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 104824124
+            }
+          },
+          {
             "arguments": [],
             "keyword": "Given ",
             "line": 18,
             "name": "the range is 10 meters",
             "match": {
-              "location": "file:\\C:\\Users\\Kerry\\Programming\\github\\javascript\\cucumber.js\\test\\bdd\\features\\step_definitions\\steps.js:8"
+              "location": "file:/Users/kerryharris/Progamming/rush/cucumber-js-playwright/test/bdd/features/step_definitions/steps.js:8"
             },
             "result": {
               "status": "passed",
-              "duration": 72499
+              "duration": 109125
             }
           },
           {
@@ -192,11 +232,11 @@
             "line": 19,
             "name": "people are located at:",
             "match": {
-              "location": "file:\\C:\\Users\\Kerry\\Programming\\github\\javascript\\cucumber.js\\test\\bdd\\features\\step_definitions\\steps.js:17"
+              "location": "file:/Users/kerryharris/Progamming/rush/cucumber-js-playwright/test/bdd/features/step_definitions/steps.js:17"
             },
             "result": {
               "status": "passed",
-              "duration": 156199
+              "duration": 52040
             }
           },
           {
@@ -205,11 +245,11 @@
             "line": 22,
             "name": "Sean shouts \"Free coffee at Sean's\"",
             "match": {
-              "location": "file:\\C:\\Users\\Kerry\\Programming\\github\\javascript\\cucumber.js\\test\\bdd\\features\\step_definitions\\shout_steps.js:4"
+              "location": "file:/Users/kerryharris/Progamming/rush/cucumber-js-playwright/test/bdd/features/step_definitions/shout_steps.js:4"
             },
             "result": {
               "status": "passed",
-              "duration": 174699
+              "duration": 41125
             }
           },
           {
@@ -218,11 +258,19 @@
             "line": 23,
             "name": "Lucy only hears Sean's message when she is in range",
             "match": {
-              "location": "file:\\C:\\Users\\Kerry\\Programming\\github\\javascript\\cucumber.js\\test\\bdd\\features\\step_definitions\\steps.js:37"
+              "location": "file:/Users/kerryharris/Progamming/rush/cucumber-js-playwright/test/bdd/features/step_definitions/steps.js:37"
             },
             "result": {
               "status": "passed",
-              "duration": 147599
+              "duration": 158374
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 32082000
             }
           }
         ],
@@ -237,16 +285,24 @@
         "name": "Two shouts",
         "steps": [
           {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 102286582
+            }
+          },
+          {
             "arguments": [],
             "keyword": "Given ",
             "line": 34,
             "name": "a person named Lucy",
             "match": {
-              "location": "file:\\C:\\Users\\Kerry\\Programming\\github\\javascript\\cucumber.js\\test\\bdd\\features\\step_definitions\\steps.js:12"
+              "location": "file:/Users/kerryharris/Progamming/rush/cucumber-js-playwright/test/bdd/features/step_definitions/steps.js:12"
             },
             "result": {
               "status": "passed",
-              "duration": 72499
+              "duration": 58875
             }
           },
           {
@@ -255,11 +311,11 @@
             "line": 35,
             "name": "a person named Sean",
             "match": {
-              "location": "file:\\C:\\Users\\Kerry\\Programming\\github\\javascript\\cucumber.js\\test\\bdd\\features\\step_definitions\\steps.js:12"
+              "location": "file:/Users/kerryharris/Progamming/rush/cucumber-js-playwright/test/bdd/features/step_definitions/steps.js:12"
             },
             "result": {
               "status": "passed",
-              "duration": 54300
+              "duration": 21416
             }
           },
           {
@@ -268,11 +324,11 @@
             "line": 36,
             "name": "Sean shouts \"Free bagels at Sean's\"",
             "match": {
-              "location": "file:\\C:\\Users\\Kerry\\Programming\\github\\javascript\\cucumber.js\\test\\bdd\\features\\step_definitions\\shout_steps.js:4"
+              "location": "file:/Users/kerryharris/Progamming/rush/cucumber-js-playwright/test/bdd/features/step_definitions/shout_steps.js:4"
             },
             "result": {
               "status": "passed",
-              "duration": 145600
+              "duration": 34750
             }
           },
           {
@@ -281,11 +337,11 @@
             "line": 37,
             "name": "Sean shouts \"Free coffee at Sean's\"",
             "match": {
-              "location": "file:\\C:\\Users\\Kerry\\Programming\\github\\javascript\\cucumber.js\\test\\bdd\\features\\step_definitions\\shout_steps.js:4"
+              "location": "file:/Users/kerryharris/Progamming/rush/cucumber-js-playwright/test/bdd/features/step_definitions/shout_steps.js:4"
             },
             "result": {
               "status": "passed",
-              "duration": 78999
+              "duration": 27041
             }
           },
           {
@@ -309,11 +365,19 @@
             "line": 38,
             "name": "Lucy hears the following messages:",
             "match": {
-              "location": "file:\\C:\\Users\\Kerry\\Programming\\github\\javascript\\cucumber.js\\test\\bdd\\features\\step_definitions\\steps.js:32"
+              "location": "file:/Users/kerryharris/Progamming/rush/cucumber-js-playwright/test/bdd/features/step_definitions/steps.js:32"
             },
             "result": {
               "status": "passed",
-              "duration": 759700
+              "duration": 452166
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 32047874
             }
           }
         ],
@@ -328,16 +392,24 @@
         "name": "Message too long",
         "steps": [
           {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 99878667
+            }
+          },
+          {
             "arguments": [],
             "keyword": "Given ",
             "line": 47,
             "name": "a person named Sean",
             "match": {
-              "location": "file:\\C:\\Users\\Kerry\\Programming\\github\\javascript\\cucumber.js\\test\\bdd\\features\\step_definitions\\steps.js:12"
+              "location": "file:/Users/kerryharris/Progamming/rush/cucumber-js-playwright/test/bdd/features/step_definitions/steps.js:12"
             },
             "result": {
               "status": "passed",
-              "duration": 55500
+              "duration": 61749
             }
           },
           {
@@ -346,11 +418,11 @@
             "line": 48,
             "name": "a person named Lucy",
             "match": {
-              "location": "file:\\C:\\Users\\Kerry\\Programming\\github\\javascript\\cucumber.js\\test\\bdd\\features\\step_definitions\\steps.js:12"
+              "location": "file:/Users/kerryharris/Progamming/rush/cucumber-js-playwright/test/bdd/features/step_definitions/steps.js:12"
             },
             "result": {
               "status": "passed",
-              "duration": 54899
+              "duration": 24457
             }
           },
           {
@@ -364,11 +436,11 @@
             "line": 49,
             "name": "Sean shouts the following message",
             "match": {
-              "location": "file:\\C:\\Users\\Kerry\\Programming\\github\\javascript\\cucumber.js\\test\\bdd\\features\\step_definitions\\shout_steps.js:8"
+              "location": "file:/Users/kerryharris/Progamming/rush/cucumber-js-playwright/test/bdd/features/step_definitions/shout_steps.js:8"
             },
             "result": {
               "status": "passed",
-              "duration": 90499
+              "duration": 76874
             }
           },
           {
@@ -377,11 +449,19 @@
             "line": 55,
             "name": "Lucy doesn't hear Sean's message",
             "match": {
-              "location": "file:\\C:\\Users\\Kerry\\Programming\\github\\javascript\\cucumber.js\\test\\bdd\\features\\step_definitions\\steps.js:28"
+              "location": "file:/Users/kerryharris/Progamming/rush/cucumber-js-playwright/test/bdd/features/step_definitions/steps.js:28"
             },
             "result": {
               "status": "passed",
-              "duration": 191900
+              "duration": 100957
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 45735667
             }
           }
         ],
@@ -399,6 +479,83 @@
     "keyword": "Feature",
     "name": "Hear Shout",
     "tags": [],
-    "uri": "test\\bdd\\features\\hear_shout.feature"
+    "uri": "test/bdd/features/hear_shout.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "wonderous-flutter;playwright-can-be-used-in-cucumber;playwright-in-cucumber",
+        "keyword": "Scenario",
+        "line": 5,
+        "name": "Playwright in Cucumber",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 107712958
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "I browse to the Wonderous Flutter Web app",
+            "match": {
+              "location": "file:/Users/kerryharris/Progamming/rush/cucumber-js-playwright/test/bdd/features/step_definitions/playwright_steps.js:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1095132750
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 7,
+            "name": "I navigate to another page",
+            "match": {
+              "location": "file:/Users/kerryharris/Progamming/rush/cucumber-js-playwright/test/bdd/features/step_definitions/playwright_steps.js:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3925238332
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "I should be taken to that page",
+            "match": {
+              "location": "file:/Users/kerryharris/Progamming/rush/cucumber-js-playwright/test/bdd/features/step_definitions/playwright_steps.js:28"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2157833
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 17246083
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "wonderous-flutter",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Wonderous Flutter",
+    "tags": [],
+    "uri": "test/bdd/features/playwright.feature"
   }
 ]
