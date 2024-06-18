@@ -1,5 +1,6 @@
-#results
+#autogen
 test/results/
+build/
 
 # Logs
 logs

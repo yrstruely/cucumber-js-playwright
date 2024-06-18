@@ -26,8 +26,62 @@ cd cucumber-js-playwright
 npm install
 ```
 
-## Usage
+## Test Preparation
+In order to test the flutter web application some preparation needs to be done fist in the flutter repository.
+ - Add the following code to the `lib/main.dart` file to ensure that all the html elements are added to the DOM:
+ ```javascript
+ void main() {
+  
+  WidgetsFlutterBinding.ensureInitialized();
+  SemanticsBinding.instance.ensureSemantics();
+    .
+    .
+    .
+  runApp(const MyApp());
+}
+ ```
+ - Build/deploy the flutter web app with `flutter build web`
+ - Copy the `build/web/` folder from the flutter repository to the `build` directory of the `cucumber-js-playwright` project. 
+ - now in the `cucumber-js-playwright` project use the `npx playwright codegen` command to record the test steps for your BDD tests.
+ - Place the recorded steps into the step_definitions to complete the BDD tests e.g.:
+ ```javascript
+import { Given, When, Then, Before, After } from '@cucumber/cucumber';
+import { chromium, expect } from '@playwright/test';
 
+
+Before(async function () {
+    const browser = await chromium.launch({ headless: true });
+    this.browser = browser
+});
+
+After(async function () {
+    await this.browser.close();
+});
+
+Given('I am on the Flutter Web app', async function () {
+    const context = await this.browser.newContext();
+    const page = await context.newPage();
+    this.page = page
+    await this.page.goto('http://localhost:3000/');
+    await expect(this.page).toHaveTitle(/Flutter Demo/);
+})
+
+When('I increment the counter {int} times', async function (times) {
+    await this.page.getByRole('button', { name: 'Increment' }).click();
+
+    for (let i = 0; i < times - 1; i++) {
+        await this.page.getByRole('button', { name: 'Increment Increment' }).click();
+    }
+});
+
+Then('the counter should show the number {int}', async function (times) {
+    await expect(this.page.locator('#flt-semantic-node-5')).toContainText('' + times);
+});
+ ```
+ - Serve the flutter web app using the `node src/server.js` command
+ - Everything is now set up for running the tests, see: #Usage
+
+## Usage
 Before running the application, you need to have [Node.js](https://nodejs.org/) installed on your machine.
 
 To run the application:
@@ -45,57 +99,15 @@ The cucumber-js-playwright sample project uses cucumber-js to define and execute
 Here is an example feature file demonstrating various BDD techniques:
 
 ```gherkin
-Feature: Hear Shout
+Feature: Wonderous Flutter
 
-    Shouty allows users to hear other users as long as they are close enough to each other.
+    Rule: Playwright can be used in Cucumber
 
-    Rule: Shouts can be heard by other users
+        Scenario: Playwright in Cucumber
+            Given I am on the Flutter Web app
+            When I increment the counter 3 times
+            Then the counter should show the number 3
 
-        Scenario: Listener hears a message
-            Given a person named Lucy
-            And a person named Sean
-            When Sean shouts "Free bagels at Sean's"
-            Then Lucy hears Sean's message
-
-    Rule: Shouts should only be heard if listener is within range
-
-        Scenario Outline: Only listener's in range can hear
-            Given the range is <Range> meters
-            And people are located at:
-                | name     | Sean | Lucy |
-                | location | 0    | 50   |
-            When Sean shouts "Free coffee at Sean's"
-            Then Lucy only hears Sean's message when she is in range
-
-            Examples:
-                | Range |
-                | 100   |
-                | 10    |
-
-    Rule: Listeners can hear multiple shouts
-
-        Scenario: Two shouts
-            Given a person named Lucy
-            And a person named Sean
-            When Sean shouts "Free bagels at Sean's"
-            And Sean shouts "Free coffee at Sean's"
-            Then Lucy hears the following messages:
-                | Free bagels at Sean's |
-                | Free coffee at Sean's |
-
-    Rule: Maximum length of a message
-
-        @run-me
-        Scenario: Message too long
-            Given a person named Sean
-            And a person named Lucy
-            When Sean shouts the following message
-            """
-            01234567890123456789012345678901234567890123456789012345
-            678901234567890123456789012345678901234567890123456789012345678901234
-            5678901234567890123456789012345678901234567890123456789x
-            """
-            Then Lucy doesn't hear Sean's message
 ```
 
 ### TDD with Mocha and Chai
@@ -147,7 +159,7 @@ This will run both the cucumber feature tests and the mocha unit tests.
 ```
 cucumber-js-playwright/
 ├── src/
-│   └── shouty.js
+│   └── server.js
 ├── test/bdd/
 │        ├── features/
 │        │   └── hear_shout.feature

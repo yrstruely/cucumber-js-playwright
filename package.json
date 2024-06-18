@@ -5,6 +5,7 @@
   "main": "src/shouty.js",
   "type": "module",
   "scripts": {
+    "serve": "node src/server.js",
     "test": "mocha test/tdd/unit/* & cucumber-js -f @cucumber/pretty-formatter -f html:test/results/cucumber.html -f json:test/results/cucumber.json -f rerun:test/results/@rerun.txt"
   },
   "keywords": [
@@ -16,10 +17,13 @@
   "devDependencies": {
     "@cucumber/cucumber": "latest",
     "@cucumber/pretty-formatter": "latest",
-    "@playwright/test": "^latest",
+    "@playwright/test": "latest",
     "@types/node": "latest",
     "chai": "latest",
     "hamjest": "latest",
-    "mocha": "latest"
+    "mocha": "latest",
+    "express": "latest"
+  },
+  "dependencies": { 
   }
 }
