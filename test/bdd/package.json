@@ -1,0 +1,28 @@
+{
+  "name": "cucumber-js-playwright",
+  "version": "1.0.0",
+  "description": "BDD Tests for Flutter Sample Web App",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "build": "flutter build web",
+    "copy": "cp -r ../../build/web web",
+    "server": "node src/server.js",
+    "test": "cucumber-js -f @cucumber/pretty-formatter -f html:results/cucumber.html -f json:results/cucumber.json -f rerun:results/@rerun.txt"
+  },
+  "author": "Kerry Harris",
+  "license": "ISC",
+  "devDependencies": {
+    "@cucumber/cucumber": "latest",
+    "@cucumber/pretty-formatter": "latest",
+    "@playwright/test": "latest",
+    "@types/node": "latest",
+    "chai": "latest",
+    "hamjest": "latest",
+    "mocha": "latest",
+    "express": "latest"
+  },
+  "dependencies": {
+
+  }
+}
