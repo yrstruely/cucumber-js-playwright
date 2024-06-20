@@ -40,6 +40,8 @@ fi
 # Command 1: npm run build
 run_command "npm run build"
 
+run_command "npm install"
+
 # Command 2: npm run server (running in background)
 run_command "npm run server &"
 
